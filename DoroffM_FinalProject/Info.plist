@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Please allow for saving demo videos</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Please allow microphone usage for recording demos</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Please allow camera usage for recording demos</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
