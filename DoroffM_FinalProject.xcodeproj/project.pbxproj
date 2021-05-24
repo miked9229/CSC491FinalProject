@@ -14,9 +14,10 @@
 		924CC69A263F0D8B00BC320A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924CC698263F0D8B00BC320A /* Main.storyboard */; };
 		924CC69C263F0D9200BC320A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 924CC69B263F0D9200BC320A /* Assets.xcassets */; };
 		924CC69F263F0D9200BC320A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924CC69D263F0D9200BC320A /* LaunchScreen.storyboard */; };
+		92504767265C1DB900BFFDF7 /* DemoMovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92504766265C1DB900BFFDF7 /* DemoMovieTableViewController.swift */; };
 		925BAD2C265AF8990088D898 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925BAD2B265AF8990088D898 /* Constants.swift */; };
-		925BAD2E265AF8D90088D898 /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925BAD2D265AF8D90088D898 /* MovieController.swift */; };
-		925BAD31265B045F0088D898 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 925BAD30265B045F0088D898 /* SwiftPackageProductDependency */; };
+		925BAD2E265AF8D90088D898 /* MovieInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925BAD2D265AF8D90088D898 /* MovieInputController.swift */; };
+		925BAD31265B045F0088D898 /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = 925BAD30265B045F0088D898 /* LBTATools */; };
 		928EA0A0265B40CE0050302C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 928EA09F265B40CD0050302C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -32,8 +33,9 @@
 		924CC69B263F0D9200BC320A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		924CC69E263F0D9200BC320A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		924CC6A0263F0D9200BC320A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92504766265C1DB900BFFDF7 /* DemoMovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoMovieTableViewController.swift; sourceTree = "<group>"; };
 		925BAD2B265AF8990088D898 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		925BAD2D265AF8D90088D898 /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
+		925BAD2D265AF8D90088D898 /* MovieInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInputController.swift; sourceTree = "<group>"; };
 		928EA09F265B40CD0050302C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,7 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C69F9CED7A8BD87B17030E0 /* Pods_DoroffM_FinalProject.framework in Frameworks */,
-				925BAD31265B045F0088D898 /* BuildFile in Frameworks */,
+				925BAD31265B045F0088D898 /* LBTATools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				924CC696263F0D8B00BC320A /* HomeController.swift */,
-				925BAD2D265AF8D90088D898 /* MovieController.swift */,
+				925BAD2D265AF8D90088D898 /* MovieInputController.swift */,
+				92504766265C1DB900BFFDF7 /* DemoMovieTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -145,7 +148,7 @@
 			);
 			name = DoroffM_FinalProject;
 			packageProductDependencies = (
-				925BAD30265B045F0088D898 /* SwiftPackageProductDependency */,
+				925BAD30265B045F0088D898 /* LBTATools */,
 			);
 			productName = DoroffM_FinalProject;
 			productReference = 924CC68F263F0D8B00BC320A /* DoroffM_FinalProject.app */;
@@ -175,7 +178,7 @@
 			);
 			mainGroup = 924CC686263F0D8B00BC320A;
 			packageReferences = (
-				925BAD2F265B045F0088D898 /* RemoteSwiftPackageReference */,
+				925BAD2F265B045F0088D898 /* XCRemoteSwiftPackageReference "LBTATools" */,
 			);
 			productRefGroup = 924CC690263F0D8B00BC320A /* Products */;
 			projectDirPath = "";
@@ -248,10 +251,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				924CC697263F0D8B00BC320A /* HomeController.swift in Sources */,
-				925BAD2E265AF8D90088D898 /* MovieController.swift in Sources */,
+				925BAD2E265AF8D90088D898 /* MovieInputController.swift in Sources */,
 				924CC693263F0D8B00BC320A /* AppDelegate.swift in Sources */,
 				924CC695263F0D8B00BC320A /* SceneDelegate.swift in Sources */,
 				925BAD2C265AF8990088D898 /* Constants.swift in Sources */,
+				92504767265C1DB900BFFDF7 /* DemoMovieTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +461,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		925BAD2F265B045F0088D898 /* RemoteSwiftPackageReference */ = {
+		925BAD2F265B045F0088D898 /* XCRemoteSwiftPackageReference "LBTATools" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bhlvoong/LBTATools";
 			requirement = {
@@ -468,9 +472,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		925BAD30265B045F0088D898 /* SwiftPackageProductDependency */ = {
+		925BAD30265B045F0088D898 /* LBTATools */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 925BAD2F265B045F0088D898 /* RemoteSwiftPackageReference */;
+			package = 925BAD2F265B045F0088D898 /* XCRemoteSwiftPackageReference "LBTATools" */;
 			productName = LBTATools;
 		};
 /* End XCSwiftPackageProductDependency section */

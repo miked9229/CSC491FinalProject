@@ -17,19 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="udW-6z-N81">
-                                <rect key="frame" x="31" y="318" width="352" height="100"/>
+                                <rect key="frame" x="142" y="318" width="130" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="KPM-ZB-8Ez">
-                                        <rect key="frame" x="0.0" y="0.0" width="352" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Speech" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6ru-Nh-6z3">
-                                                <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="bOS-cN-B9E">
-                                                <rect key="frame" x="192" y="0.0" width="160" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search By Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="bOS-cN-B9E">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -37,15 +31,14 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qmd-Ni-Dml">
-                                        <rect key="frame" x="0.0" y="70" width="352" height="30"/>
+                                        <rect key="frame" x="0.0" y="70" width="130" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1N6-ng-fcP">
-                                                <rect key="frame" x="0.0" y="0.0" width="176" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5T-vy-RDA">
-                                                <rect key="frame" x="176" y="0.0" width="176" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="goToSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UlS-Lz-Btn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -68,7 +61,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
                             <constraint firstItem="udW-6z-N81" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0LG-2e-eAK"/>
                             <constraint firstItem="KAO-TS-wTB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DNS-A2-BHu"/>
@@ -87,8 +80,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
