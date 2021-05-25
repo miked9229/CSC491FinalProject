@@ -12,6 +12,7 @@ import LBTATools
 import AVKit
 import Firebase
 import FirebaseDatabase
+import JGProgressHUD
 
 
 class MovieInputController: UIViewController, UITextFieldDelegate {
@@ -163,6 +164,11 @@ extension MovieInputController: UIImagePickerControllerDelegate {
         
         guard let mediaUrl = info[UIImagePickerController.InfoKey.mediaURL] as? URL else { return }
         
+        let hud = JGProgressHUD()
+        hud.textLabel.text = "Uploading video to server.."
+        hud.show(in: view)
+        
+        
         let uniqueid = NSUUID().uuidString
         let movieName = uniqueid + ".mov"
         
@@ -174,6 +180,8 @@ extension MovieInputController: UIImagePickerControllerDelegate {
             Firebase.Storage.storage().reference().child("movies").child(movieName).downloadURL { url, err in
                 
                 self.reference.child("movies").child(uniqueid).setValue(["FirebaseURL":url?.absoluteString, "Category": self.category, "Tags": self.tags, "Name": self.name])
+                
+                hud.dismiss()
                 
                 self.dismiss(animated: true)
             }
